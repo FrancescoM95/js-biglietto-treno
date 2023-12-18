@@ -21,3 +21,19 @@ console.log('Età:', age);
 if (isNaN(age) || age < 1) {
     alert(errorMessage);
 }
+
+//* 3a. Calcoliamo il prezzo del biglietto moltiplicandolo per la tariffa base. 
+
+let price = parseInt(distance * 0.21)
+console.log('Prezzo: €', price);
+
+//* 3b. Applichiamo uno sconto al prezzo dove possibile.
+
+if (age < 18) {
+    price *= 0.8;
+} else if (age >= 65) {
+    price *= 0.6;
+}
+
+const finalPrice = price.toFixed(2);
+console.log('Prezzo scontato: €', finalPrice);
