@@ -37,3 +37,7 @@ if (age < 18) {
 
 const finalPrice = price.toFixed(2);
 console.log('Prezzo scontato: €', finalPrice);
+
+//* 4. Mostriamo il totale del prezzo per il biglietto in un messaggio in pagina.
+
+document.getElementById('paragraph').innerHTML = 'Il prezzo del viaggio è: ' + `<b>€ ${finalPrice}</b>`;
